@@ -20,23 +20,23 @@ return new class extends Migration
             $table->foreignId('trader_id')->constrained('traders');
             $table->timestamps();
         });
-        DB::table('tickets')->insert([
+        DB::table('events')->insert([
         [
             'name'=>'Marika',
             'time'=>'2020.11.20.',
-            'adress'=>'város, utca 23',
+            'address'=>'város, utca 23',
             'trader_id'=> '1'
         ],
         [
             'name'=>'Lajos',
             'time'=>'2025.12.20.',
-            'adress'=>'város, utca 8',
+            'address'=>'város, utca 8',
             'trader_id'=> '2'
         ],
         [
             'name'=>'Dani',
             'time'=>'2019.11.5.',
-            'adress'=>'város, utca 6',
+            'address'=>'város, utca 6',
             'trader_id'=> '1'
         ],
         

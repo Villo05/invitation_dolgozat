@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('status');
             $table->timestamps();
         });
-        DB::table('tickets')->insert([
+        /*DB::table('tickets')->insert([
         [
             'user_id'=>'1',
             'event_id'=>'3',
@@ -35,7 +35,7 @@ return new class extends Migration
             'event_id'=>'1',
             'status'=>'foglalt',
         ]
-    ]);
+    ]);*/
     }
 
     /**

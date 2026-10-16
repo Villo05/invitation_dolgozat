@@ -20,12 +20,12 @@ class TraderFactory extends Factory
         return [
             'name'=>'Lajos',
             'description'=>'leírás',
-            'country'=>'török',
+            'country'=>'török'
         ];
         [
             'name'=>'Marika',
             'description'=>'leírás',
-            'country'=>'magyar',
+            'country'=>'magyar'
         ];
         [
             'name'=>'Norbert',
@@ -35,12 +35,12 @@ class TraderFactory extends Factory
         [
             'name'=>'Margit',
             'description'=>'leírás',
-            'country'=>'német',
+            'country'=>'német'
         ];
         [
             'name'=>'Károly',
             'description'=>'leírás',
-            'country'=>'magyars',
+            'country'=>'magyars'
         ];
     }
 }

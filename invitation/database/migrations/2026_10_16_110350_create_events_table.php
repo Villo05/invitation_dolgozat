@@ -22,22 +22,10 @@ return new class extends Migration
         });
         DB::table('events')->insert([
         [
-            'name'=>'Marika',
-            'time'=>'2020.11.20.',
-            'adress'=>'város, utca 23',
-            'trader_id'=> '1'
-        ],
-        [
-            'name'=>'Lajos',
-            'time'=>'2025.12.20.',
-            'adress'=>'város, utca 8',
-            'trader_id'=> '2'
-        ],
-        [
-            'name'=>'Dani',
-            'time'=>'2019.11.5.',
-            'adress'=>'város, utca 6',
-            'trader_id'=> '3'
+            'name'=>fake()->words(2,true),
+            'time'=>fake()->dataTimeBetween('now','+1 year'),
+            'adress'=>fake()->address(),
+            'trader_id'=>fake()->numberBetween(1,3)
         ]
     ]);
     }

@@ -18,29 +18,9 @@ class TraderFactory extends Factory
     public function definition(): array
     {
         return [
-            'name'=>'Lajos',
-            'description'=>'leírás',
-            'country'=>'török'
-        ];
-        [
-            'name'=>'Marika',
-            'description'=>'leírás',
-            'country'=>'magyar'
-        ];
-        [
-            'name'=>'Norbert',
-            'description'=>'leírás',
-            'country'=>'olasz'
-        ];
-        [
-            'name'=>'Margit',
-            'description'=>'leírás',
-            'country'=>'német'
-        ];
-        [
-            'name'=>'Károly',
-            'description'=>'leírás',
-            'country'=>'magyars'
+            'name'=>fake()->words(2,true),
+            'description'=>fake()->text(),
+            'country'=>fake()->text('country'),
         ];
     }
 }

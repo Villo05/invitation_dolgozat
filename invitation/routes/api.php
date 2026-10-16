@@ -10,8 +10,8 @@ Route::get('/user', function (Request $request) {
 
 
 
-Route::get('/events',[EventController::class,'show']);
-Route::post('/events',[EventController::class,'store']);
-Route::put('/events',[EventController::class,'update']);
-Route::delete('/events',[EventController::class,'destroy']);
+Route::get('/events/{id}',[EventController::class,'show']);
+Route::post('/events/{id}',[EventController::class,'store']);
+Route::put('/events/{id}',[EventController::class,'update']);
+Route::delete('/events/{id}',[EventController::class,'destroy']);
 

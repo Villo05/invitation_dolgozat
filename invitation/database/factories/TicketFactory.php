@@ -18,7 +18,9 @@ class TicketFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'user_id'=>fake(),
+            'event_id'=>fake(),
+            'status'=>fake()->text('status')
         ];
     }
 }

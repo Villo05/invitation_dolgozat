@@ -20,7 +20,7 @@ class TraderFactory extends Factory
         return [
             'name'=>fake()->words(2,true),
             'description'=>fake()->text(),
-            'country'=>fake()->text('country'),
+            'country'=>fake()->text('country')
         ];
     }
 }
